@@ -87,12 +87,12 @@ header input{
     }  
     
 }
-.card .btn-details{
+.btn-details{
    
     border: none;
     color: white;
     background-color: var(--secondary-color);
-    border-style: solid white;
+    /* border-style: solid white; */
 
    
 }
