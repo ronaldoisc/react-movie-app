@@ -1,36 +1,40 @@
 :root{
-    --primary-color:rgb(34, 39, 77);
-    --secondary-color:rgb(54, 61, 107);
+    /* --primary-color:rgb(34, 39, 77); */
+    --primary-color:rgb(28, 33,45);
+    --secondary-color:rgb(50, 56, 82);
+    /* --secondary-color:rgb(15, 36, 97); */
 }
 body{
     background-color: var(--primary-color);
     color: white;
 }
 header{
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     background-color: var(--secondary-color);
+    display: flex;
     height: 60px;
+    justify-content: space-between;
 }
 
 header input{
-    background-color: var(--secondary-color);
-    border-radius: 60px;
-    border-style: all black;
-    color: white;
+
     outline: none;
+    border: 1px solid white;
+    padding: 0.5rem;
     text-align: center;
-    height: 40px;
-    width: 20%;
-    border: 2px solid var(--primary-color);
-    background-color: var(--secondary-color);
+    color:black;
+    border-radius: 8px;
+    margin: 10px;
+  
+}
+header input::placeholder{
+    color: black;
 }
 .main-title{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 2.3rem;
-    color: red;
+    color: rgb(206, 46, 46);
 }
 
 .cards{
@@ -54,17 +58,17 @@ header input{
 }
 @media (min-width: 768px) {
     .card{
-        flex: 0 0 30%;
+        flex: 0 0 35%;
     }
     
 }
 @media (min-width: 1024px) {
     .card{
-        flex: 0 0 15%;
+        flex: 0 0 20%;
     }
     .card:hover{
         cursor: pointer;
-        transform: scale(1.10);
+        transform: scale(1.05);
         transition: transform 0.5s;
     }
     .card:hover > .btn-details{
@@ -87,7 +91,7 @@ header input{
     }  
     
 }
-.btn-details{
+.card .btn-details{
    
     border: none;
     color: white;
